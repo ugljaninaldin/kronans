@@ -1,0 +1,13 @@
+make separate pages for categories where are all the categories and when you pick category there
+will be page for all item in category and when you pick item you will see page for that item with
+all information's and all the add-ons for that item and you will have button that is add to cart
+that will add to the cart that item and all chosen add-ons when you open cart page we can see add
+items added and all of their add-ons where we can remove item from the cart and make it so multiple
+people can use it because items in card would be different session by the session make this program
+from the scratch finish all function, models and templates. Make all the the css and js files. That
+is only for the menu app in the restaurant_project  I also want to make blog app that will have
+simple blog one image for thumbnail one image for the blog content and some text for that blog page
+and I would like to have page where all the blog posts all placed and placed in that order that is
+first show new posts. In the main app for the restaurant_project   i would like to have main page
+where i would have 3 last blog post 3 category's from the menu app in sections and basic home page
+stuff i would like to have navbar that links all of that
