@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+{% endblock %}
+
+{% block hero %}
+<!-- CONTACT HERO SECTION START -->
+<div class="contact-hero-section">
+    <!-- HERO IMAGE START -->
+    <div class="hero-image">
+	<img src="{% static 'img/contact-hero.jpg' %}" />
+    </div>
+    <!-- HERO IMAGE END -->
+
+    <!-- HERO TEXT START -->
+    <div class="hero-text">
+	<h1 class="hero-header">KONTAKTA OSS</h1>
+    </div>
+    <!-- HERO TEXT END -->
+    
+</div>
+<!-- CONTACT HERO SECTION END -->
+{% endblock %}
+
+{% block content %}
+<!-- CONTACT MAIN TEXT START -->
+<div class="contact-main-text">
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+	<input type="text" class="form-control" id="contact-subject"
+	placeholder="Ämne" name="subject">
+    </div>
+    <br>
+    <div class="form-group">
+	<input name="form_mail" type="email" class="form-control" id="contact-mail" placeholder="E-post">
+    </div>
+    <br>
+    <div class="form-group">
+	<textarea name="message" placeholder="Meddelande" class="form-control" id="contact-msg" rows="5"></textarea>
+    </div>
+    <br>
+
+    <button class="contact-button" type="submit">Skicka</button>
+</form>
+</div>
+<!-- CONTACT MAIN TEXT END -->
+{% endblock %}

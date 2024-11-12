@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block hero %}
+<!-- ABOUT HERO SECTION START -->
+<div class="about-hero-section">
+    <div class="hero-image">
+	<img src="{% static 'img/abu3.jpeg' %}" />
+    </div>
+</div>
+<!-- ABOUT HERO SECTION END -->
+{% endblock %}
+
+{% block content %}
+<!-- TEAM PAGE CONTET START -->
+<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-one">
+    <h1 class="team-content-header team-content-header-one">Vilka är vi?</h1>
+    <p class="team-content-para team-content-para-one">
+    På Kronans Pizzeria är vi oerhört stolta över att servera de finaste och läckraste pizzorna,
+    sallader, pasta och hamburgare i Haninge med omnejd. Detta leds av vår professionella pizza
+    Maestro och hans team. En smak av Italien i Sverige!
+    </p>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-two">
+    <h1 class="team-content-header team-content-header-two">Pizzabagaren</h1>
+    <p class="team-content-para team-content-para-two">
+    På Kronan pizzeria har vi förmånen att ha expertis från vår uppskattade professionella
+    pizzabagare, Abubacarr. Abubacarr Kolley kommer från Italien, pizzans födelseplats, och tar med
+    sig en autentisk smak av Italien till Sverige. Med ett diplom från en känd professionell
+    italiensk pizzaskola och den prestigefyllda titeln som Sveriges bästa italienska pizzakock 2023,
+    är Abu en sann mästare i sitt arbete som pizzabagare.
+    </p>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-three">
+    <h1 class="team-content-header team-content-header-three">Passion för pizza</h1>
+    <p class="team-content-para team-content-para-three">
+    Abus resa som pizzaiolo började med en djupt rotad passion för pizza. Från en ung ålder
+    finslipade han sina färdigheter och utvecklade en djup förståelse för konsten att göra pizza.
+    Hans hängivenhet och engagemang för perfektion ledde honom till en formell utbildning på en
+    uppskattad italiensk pizzaskola, där han behärskade de traditionella teknikerna och
+    hemligheterna för att skapa den perfekta klassiska och napolitanska pizzastilen.
+    </p>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-one">
+    <div class="team-image">
+	<img class="team-image-tag" src="{% static 'img/abu1.jpeg' %}">
+    </div>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-four">
+    <h1 class="team-content-header team-content-header-four">Prisbelönt expertis</h1>
+    <p class="team-content-para team-content-para-four">
+    År 2023 korades Abubacarr till den bästa italienska-napolitanska pizzabagaren i Sverige, ett
+    bevis på hans exceptionella talang och kulinariska skicklighet. Hans innovativa skapelser,
+    uppmärksamhet för detaljer och engagemang för att endast använda de finaste ingredienserna, har
+    gett honom detta prestigefyllda erkännande. Med varje pizza han tillverkar strävar Abu efter att
+    leverera en oöverträffad matupplevelse som tar dig till Roms gator.
+    </p>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-one">
+    <div class="team-image">
+	<img class="team-image-tag" src="{% static 'img/abu2.jpeg' %}">
+    </div>
+</div>
+
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="team-content team-content-one">
+    <h1 class="team-content-header team-content-header-one">Vilka är vi?</h1>
+    <p class="team-content-para team-content-para-one">
+    På Kronans Pizzeria är vi oerhört stolta över att servera de finaste och läckraste pizzorna,
+    sallader, pasta och hamburgare i Haninge med omnejd. Detta leds av vår professionella pizza
+    Maestro och hans team. En smak av Italien i Sverige!
+    </p>
+</div>
+<!-- TEAM PAGE CONTET END -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+{% endblock %}

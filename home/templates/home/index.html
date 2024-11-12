@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %}
+
+{% block hero %}
+<!-- HOME HERO SECTION START -->
+<div class="home-hero-section">
+    <!-- HERO IMAGE START -->
+    <div class="hero-image">
+	<img loading="lazy" src="{% static 'img/home-hero.jpg' %}" />
+    </div>
+    <!-- HERO IMAGE END -->
+
+    <!-- HERO LOGO START -->
+    <div class="hero-logo">
+	<img width="300vw" src="{% static 'img/kronans_logo.svg' %}" />
+    </div>
+    <!-- HERO LOGO END -->
+
+</div>
+<!-- HOME HERO SECTION END -->
+{% endblock %}
+
+{% block content %}
+
+<!-- HOME TEXT SECTION START -->
+<div class="home-text-section" data-aos="fade-up">
+    <h1 class="home-text-header">Kronans Pizzeria</h1>
+    <p>
+    Vi är övertygade om att en fantastisk pizza börjar med de bästa råvarorna och en touch av
+    kärlek. Med ett engagemang för kvalitet, köper vi den bästa degtomatsåsen och de färskaste
+    råvarorna samt förstklassiga toppings för att tillverka pizzor som är sprängfyllda av smak.
+    Varje pizza är omsorgsfullt handgjord, vilket säkerställer att varje tugga är en härlig
+    upplevelse för dina smaklökar.
+    </p>
+
+    <p class="second-para">
+    <a href="{% url 'main:team' %}">
+	Upplev den autentiska smaken av Italien sakkunnigt tillverkad av vår prisbelönta
+	pizzabagare, Abubacarr Kolley (Abu), 2023 års bästa italienska-napolitanska pizzabagare i
+	Sverige.
+    </a>
+    </p>
+</div>
+<!-- HOME TEXT SECTION END -->
+
+<!-- HOME MENU SECTION START -->
+<div class="home-menu-section">
+
+    <!-- HOME MENU HEADER START -->
+    <div class="home-menu-header">
+	<h2 class="home-menu-header-txt">Vår Meny</h2>
+    </div>
+    <!-- HOME MENU HEADER END -->
+    
+    <!-- HOME MENU ITEMS START -->
+    <div class="home-menu-items">
+
+	<!-- HOME MENU ITEM START -->
+	<div  data-aos="zoom-in-up" class="home-menu-item">
+	    <div class="home-menu-item-image">
+		<img loading="lazy" src="{% static 'img/kronans-home/margarita.png' %}" alt="Pizza Margarita" />
+	    </div>
+	    <div class="home-menu-item-name">
+		<h3 class="home-menu-item-txt">Margarita</h3>
+	    </div>
+	</div>
+	<!-- HOME MENU ITEM END -->
+
+	<!-- HOME MENU ITEM START -->
+	<div  data-aos="zoom-in-up" class="home-menu-item">
+	    <div class="home-menu-item-image">
+		<img loading="lazy" src="{% static 'img/kronans-home/fungi.png' %}" alt="Pizza Fungi" />
+	    </div>
+	    <div class="home-menu-item-name">
+		<h3 class="home-menu-item-txt">Fungi</h3>
+	    </div>
+	</div>
+	<!-- HOME MENU ITEM END -->
+
+	<!-- HOME MENU ITEM START -->
+	<div  data-aos="zoom-in-up" class="home-menu-item">
+	    <div class="home-menu-item-image">
+		<img loading="lazy" src="{% static 'img/kronans-home/capricciosa.png' %}" alt="Pizza Capricciosa" />
+	    </div>
+	    <div class="home-menu-item-name">
+		<h3 class="home-menu-item-txt">Capricciosa</h3>
+	    </div>
+	</div>
+	<!-- HOME MENU ITEM END -->
+    </div>
+    <!-- HOME MENU ITEMS END -->
+
+    <!-- HOME MENU SECTION BUTTON START -->
+    <div class="home-menu-section-button">
+	<a href="{% url 'menu:menu_categories' %}" class="home-menu-section-link">Vår Meny</a>
+    </div>
+    <!-- HOME MENU SECTION BUTTON END -->
+
+</div>
+<!-- HOME MENU SECTION END -->
+
+<!-- HOME BLOG SECTION START -->
+<!-- EMPTY -->
+<!-- HOME BLOG SECTION END -->
+
+<!-- HOME SERVICE SECTION START -->
+<div class="home-contact-section" data-aos="fade-up">
+
+    <h1 class="home-contact-header">Våra tjänster</h1>
+    <p>
+    Planerar du en speciell händelse eller tillställning? Låt oss ta hand om maten! Allt från
+    företagsevent till födelsedagsfester: Vi kan skräddarsy en meny som passar dina behov.
+    Upplev den mysiga atmosfären i vår pizzeria genom att äta hos oss. Vår vänliga personal kommer
+    att se till att ditt besök blir bekvämt och minnesvärt. För de som är på språng erbjuder vi även
+    bekväma tjänster för hämtning, så att du kan njuta av våra pizzor var du vill och så som det
+    passar dig.
+    </p>
+
+</div>
+<!-- HOME SERVICES SECTION END -->
+
+<!-- HOME CONTACT SECTION START -->
+<div class="home-contact-section" data-aos="fade-up">
+
+    <h1 class="home-contact-header">Kontakta Oss</h1>
+    <p>Besök oss på Norra Kronans gata 428, Brandbergen. Öppettider 11:00 - 22:00 alla dagar.
+    Vi gör även hemleverans till Brandbergen, Handen, Valla, Vega, Vendelsö, Norrby, Söderby,
+    Kolartorp, Svartbäcken, Hermantorp, Jordbro, Söderhagen, Oxhagen, Kvarntorp, Dalen,
+    Västerhaninge, Skogås, Trollbäcken, Tugelsta.
+    För beställningar eller förfrågningar, ring 08-7452010 eller maila oss på [E-postadress]. Vi ser
+    fram emot att servera dig en bit pizza perfektion!
+    Låt vår kock ta dig på en kulinarisk resa till Italien, här i Sverige. Buon appetito!</p>
+
+    <!-- HOME CONTACT SECTION BUTTON START -->
+    <div class="home-contact-section-button">
+	<a href="{% url 'main:contact' %}" class="home-contact-section-link">Kontakta Oss</a>
+    </div>
+    <!-- HOME CONTACT SECTION BUTTON END -->
+</div>
+<!-- HOME CONTACT SECTION END -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    </script>
+
+{% endblock %}
